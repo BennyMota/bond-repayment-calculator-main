@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bond Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="calculator-card">
+      <div class="form-section">
+        <div class="header">
+          <h1>Bond Calculator</h1>
+          <button id="clearAll" class="clear-btn">Clear All</button>
+        </div>
+        
+        <form id="mortgageForm">
+          <div class="form-group">
+            <label for="amount">Bond Amount</label>
+            <div class="input-wrapper">
+              <span class="currency">R</span>
+              <input type="number" id="amount" value="" required>
+            </div>
+            <span class="error" id="amountError"></span>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="term">Bond Term</label>
+              <div class="input-wrapper">
+                <input type="number" id="term" value="" required>
+                <span class="suffix">years</span>
+              </div>
+              <span class="error" id="termError"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="rate">Interest Rate</label>
+              <div class="input-wrapper">
+                <input type="number" id="rate" value="" step="0.01" required>
+                <span class="suffix">%</span>
+              </div>
+              <span class="error" id="rateError"></span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Bond Type</label>
+            <div class="radio-group">
+              <label class="radio-label active">
+                <input type="radio" name="type" value="repayment" checked>
+                Repayment
+              </label>
+              <label class="radio-label">
+                <input type="radio" name="type" value="interest-only">
+                Interest Only
+              </label>
+            </div>
+          </div>
+
+          <button type="submit" class="calculate-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+              <line x1="2" y1="7" x2="22" y2="7"></line>
+            </svg>
+            Calculate Repayments
+          </button>
+        </form>
+      </div>
+
+      <div class="results-section">
+        <h2>Your results</h2>
+        <p class="results-description">
+          Your results are shown below based on the information you provided. To adjust the results, edit
+          the form and click "calculate repayments" again.
+        </p>
+
+        <div class="results-content">
+          <div class="result-group">
+            <h3>Your monthly repayments</h3>
+            <p class="monthly-amount">R0.00</p>
+          </div>
+
+          <div class="result-group">
+            <h3>Total you'll repay over the term</h3>
+            <p class="total-amount">R0.00</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
