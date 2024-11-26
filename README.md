@@ -4,7 +4,7 @@ This is a solution to the [Bond repayment calculator]
 
 Users should be able to:
 
-- Input mortgage information and see monthly repayment and total repayment amounts after submitting the form
+- Input bond information and see monthly repayment and total repayment amounts after submitting the form
 - See form validation messages if any field is incomplete
 - Complete the form only using their keyboard
 - View the optimal layout for the interface depending on their device's screen size
@@ -17,7 +17,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [live site URL]([https://your-live-site-url.com](https://bennymota.github.io/bond-repayment-calculator-main/))
 
 ## My process
 
