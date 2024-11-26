@@ -17,7 +17,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [live site URL]([https://your-live-site-url.com](https://bennymota.github.io/bond-repayment-calculator-main/))
+- Live Site URL: [Add live site URL here](https://bennymota.github.io/bond-repayment-calculator-main/)
 
 ## My process
 
